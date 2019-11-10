@@ -21,7 +21,7 @@ import time
 
 # define the constants.
 INFO = '****>>>>'
-BATCH_SIZE = 128
+BATCH_SIZE = 256
 
 '''
     @Input        None
@@ -383,24 +383,29 @@ def fit(model, training_params, evaluate_params):
     total_start_time = time.time()
     for epoch in range(epochs):
         model.train()
+        if 500 > epoch:
+            print(INFO, 'learning rate is set to 0.01')
         if 32000 > epoch > 500:
             optimizer = torch.optim.SGD(
                 model.parameters(), 
                 lr=0.1, 
                 momentum=0.9, 
                 weight_decay=0.0001)
+            print(INFO, 'learning rate is set to 0.1')
         if 48000 > epoch >= 32000:
             optimizer = torch.optim.SGD(
                 model.parameters(), 
                 lr=0.01, 
                 momentum=0.9, 
                 weight_decay=0.0001)
+            print(INFO, 'learning rate is set to 0.01')
         if epoch >= 48000:
             optimizer = torch.optim.SGD(
                 model.parameters(), 
                 lr=0.001, 
                 momentum=0.9, 
                 weight_decay=0.0001)
+            print(INFO, 'learning rate is set to 0.0001')
         start_time = time.time()
         training_loss = 0
         data_loader = training_params['data']
@@ -419,23 +424,21 @@ def fit(model, training_params, evaluate_params):
             training_loss += loss.item()
             if i % 20 == 19:
                 end_time = time.time()
-                print('\repoch: %d\ttraining loss: %.5f\t \
-                    training accuracy: %.3f\tcost time: %.3f'
+                print('\repoch: %d\ttraining loss: %.5f\ttraining accuracy: %.5f\tcost time: %.3f'
                     % (epoch +1, 
                         training_loss/(i+1), 
-                        (100*training_correct_num/training_samples_num),
+                        (training_correct_num/training_samples_num),
                         end_time-start_time),
                     end='')
                 
         end_time = time.time()
-        print('\repoch: %d\ttraining loss: %.5f\ttraining accuracy: %.3f\
-            cost time: %.3f' 
+        print('\repoch: %d\ttraining loss: %.5f\ttraining accuracy: %.5f\tcost time: %.3f' 
             % (epoch+1, 
                 training_loss/(i+1), 
-                100*training_correct_num/training_samples_num, 
+                training_correct_num/training_samples_num, 
                 end_time-start_time), 
             end='')
-        writer.add_scalar('training loss',
+        writer.add_scalar('training loss:',
             training_loss/(i+1),
             epoch*len(data_loader)+i)
         training_loss = 0
@@ -455,11 +458,12 @@ def fit(model, training_params, evaluate_params):
             writer.add_scalar('evaluating accuracy', 
             	evaluating_correct_num/evaluating_samples_num, 
             	epoch*len(data_loader)+i)
+        torch.save(model.state_dict(), 'res50_v101.pt')
     total_end_time = time.time()
     now_time = time.asctime(time.localtime(time.time()))
     print('training finished at', now_time)
     print('total time used: %.3f' % (total_end_time-total_start_time))
-    torch.save(model.state_dict(), 'mnist_v100.pt')
+    torch.save(model.state_dict(), 'res50_v101.pt')
     print(INFO, 'model saved successfully!')
 
 
@@ -490,6 +494,7 @@ def main():
     images, labels = next(iter(training_data_loader))
     writer.add_graph(res50, images.to(device))
     writer.close()
+    print(INFO, 'log data saved!')
 
 
 #if '__name__' == __main__:
