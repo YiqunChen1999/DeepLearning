@@ -21,7 +21,7 @@ import time
 
 # define the constants.
 INFO = '****>>>>'
-BATCH_SIZE = 1
+BATCH_SIZE = 128
 
 '''
 	@Input		None
@@ -75,7 +75,7 @@ def set_params(model, training_data_loader, testing_data_loader):
 	training_params = {
 	'epochs': 64000, 
 	'data': training_data_loader, 
-	'device': torch.device('cuda'),
+	'device': torch.device('cuda:3'),
 	'optimizer': torch.optim.SGD(
 		model.parameters(),
 		lr=0.01, 
@@ -85,7 +85,7 @@ def set_params(model, training_data_loader, testing_data_loader):
 	}
 	evaluating_params = {
 	'data': testing_data_loader,
-	'device': torch.device('cuda'),
+	'device': torch.device('cuda:3'),
 	'loss_fn': loss_fn,
 	}
 	print(INFO, 'done!')
@@ -427,7 +427,7 @@ def fit(model, training_params, evaluate_params):
 						end_time-start_time),
 					end='')
 				writer.add_scalar('training loss',
-					trainning_loss/(i+1),
+					training_loss/(i+1),
 					epoch*len(data_loader)+i)
 		end_time = time.time()
 		print('\repoch: %d\ttraining loss: %.5f\ttraining accuracy: %.3f\
@@ -480,7 +480,7 @@ def main():
 		training_data_loader, 
 		testing_data_loader)
 
-	device = torch.device('cuda')
+	device = torch.device('cuda:3')
 	res50.to(device)
 	fit(res50, training_params, evaluating_params)
 	images, labels = next(iter(training_data_loader))
