@@ -17,3 +17,7 @@ This page is the the deep learning experience of Yiqun Chen.
 
 # ResNet, BatchNorm and papers reading.
 
+![loss](https://raw.githubusercontent.com/YiqunChen1999/DeepLearning/master/res50_v211/res50_v211_acc.png)
+
+![loss](https://raw.githubusercontent.com/YiqunChen1999/DeepLearning/master/res50_v211/res50_v211_loss.png)
+
