@@ -19,7 +19,7 @@ import torch.nn.functional as F
 import torchvision.transforms as transforms
 import torch.optim as optim
 from torch.utils.tensorboard import SummaryWriter
-from Res50 import Res50, set_res50_params
+
 #writer = SummaryWriter('runs/res50/v108')
 
 # import auxiliary packages.
@@ -29,9 +29,9 @@ import pickle
 
 # define the constants.
 INFO = '****>>>>'
-BATCH_SIZE = 256
-DEVICE = torch.device('cuda:3')
-FILENAME = 'res50_v109'
+BATCH_SIZE = 128
+DEVICE = torch.device('cuda:2')
+FILENAME = 'res50_v211'
 print(INFO, 'loading data from', FILENAME+'.pkl')
 try:
     f = open(FILENAME+'.pkl', 'rb')
@@ -44,7 +44,7 @@ try:
 except:
     print(INFO, 'failed to load data')
     EPOCH = 0
-    LEARNING_RATE = 0.1
+    LEARNING_RATE = 0.001
     evaluating_accuracy_list = []
     print(INFO, 'set learning rate to', LEARNING_RATE)
 writer = SummaryWriter('runs/res50/'+FILENAME)
@@ -484,6 +484,32 @@ def fit(model, training_params, evaluate_params, LEARNING_RATE):
     training_accuracy = 0
     for epoch in range(epochs):
         epoch += EPOCH
+
+        if epoch == 250:
+            LEARNING_RATE *= 10
+            optimizer = torch.optim.SGD(
+                    model.parameters(), 
+                    lr=LEARNING_RATE, 
+                    momentum=0.9, 
+                    weight_decay=0.0001)
+            print(INFO, 'learning rate:', LEARNING_RATE)
+        if epoch == 500:
+            LEARNING_RATE /= 10
+            optimizer = torch.optim.SGD(
+                    model.parameters(), 
+                    lr=LEARNING_RATE, 
+                    momentum=0.9, 
+                    weight_decay=0.0001)
+            print(INFO, 'learning rate:', LEARNING_RATE)
+        if epoch == 750:
+            LEARNING_RATE /= 10
+            optimizer = torch.optim.SGD(
+                    model.parameters(), 
+                    lr=LEARNING_RATE, 
+                    momentum=0.9, 
+                    weight_decay=0.0001)
+            print(INFO, 'learning rate:', LEARNING_RATE)
+
         model.train()
         start_time = time.time()
         training_loss = 0
@@ -503,7 +529,7 @@ def fit(model, training_params, evaluate_params, LEARNING_RATE):
             loss.backward()
             optimizer.step()
             training_loss += loss.item()
-            training_accuracy = 1.0 * training_samples_num / training_correct_num
+            training_accuracy = 1.0 * training_correct_num / training_samples_num
 
             if i % 20 == 19:
                 end_time = time.time()
