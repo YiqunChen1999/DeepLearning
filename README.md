@@ -1,6 +1,6 @@
 # Welcome to DeepLearning of Yiqun Chen
 
-This page is the the deep learning experience of Yiqun Chen.
+This page is the the deep learning experience of Yiqun Chen, and the page is remaining updating.
 
 # Content
 
@@ -19,13 +19,32 @@ This page is the the deep learning experience of Yiqun Chen.
 
 # ResNet, BatchNorm and papers reading.
 
-## The training strategy.
+## ResNet with experiments.
+
+The more detailed introduction will be available soon.
+
+### The training strategy.
 
 The learning rate is set to be 0.001 for the first 250 epochs for warm up, and then 0.01 for next 250 epochs, when it get 500 epochs and 750 epochs, I set the learning rate to 0.001 and 0.0001. The code is available at (https://raw.githubusercontent.com/YiqunChen1999/DeepLearning/master/res50_v211/res50_v211.py)
 
-## The result of training loss and evaluating accuracy.
+### The result of training loss and evaluating accuracy.
 
 ![loss](https://raw.githubusercontent.com/YiqunChen1999/DeepLearning/master/res50_v211/res50_v211_acc.png)
 
 ![loss](https://raw.githubusercontent.com/YiqunChen1999/DeepLearning/master/res50_v211/res50_v211_loss.png)
 
+## The Batch Normalization.
+
+You can view the result by [clicking the link](https://www.overleaf.com/read/kgyxrfttszbp).
+
+## Papers reading
+
+I have read the following papers:
+
+- Identity Mappings in Deep Residual Networks.
+
+- Joint Discriminative and Generative Learning for Person Re-identification.
+
+And the paper below is what I am reading:
+
+- TensorMask: A Foundation for Dense Object Segmentation.
