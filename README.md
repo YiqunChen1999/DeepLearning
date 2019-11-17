@@ -21,7 +21,7 @@ This page is the the deep learning experience of Yiqun Chen, and the page is rem
 
 ## ResNet with experiments. {#resnet_with_experiments}
 
-The best testing accuracy have reached 93.91% of res50 version 211 and 93.99% of res50 version 212. The more detailed introduction will be available soon.
+The best testing accuracy have reached 93.91% of res50 version 211 and 94.01% of res50 version 212. The more detailed introduction will be available soon.
 
 ### The training strategy. {#training_strategy}
 
