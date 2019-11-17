@@ -10,9 +10,9 @@ This page is the the deep learning experience of Yiqun Chen, and the page is rem
   
   - [Training strategy.](#training_strategy)
   
-  - [The result of training loss and evaluating accuracy.](#the_result_of_training_loss_and_evaluating_accuracy)
+  - [The result of training loss and evaluating accuracy.](#res50_training_result)
   
-  2. [The Batch Normalization.](#batch_norma)
+  2. [The Batch Normalization.](#batch-norm)
 
   3. [The papers reading.](#papers_reading)
 
