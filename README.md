@@ -12,7 +12,7 @@ This page is the the deep learning experience of Yiqun Chen, and the page is rem
   
   - [The result of training loss and evaluating accuracy.](#res50_training_result)
   
-  2. [The Batch Normalization.](#batch-norm)
+  2. [The Batch Normalization.](#batchnorm)
 
   3. [The papers reading.](#papers_reading)
 
@@ -33,7 +33,7 @@ The learning rate is set to be 0.001 for the first 250 epochs for warm up, and t
 
 The learning rate is first set to be 0.001 for the first 500 epochs for warm up, when it reach epoch 500, 900, 1200, the learning rate is set to be 0.01, 0.001, 0.0001 respectively. The code is now [available](https://raw.githubusercontent.com/YiqunChen1999/DeepLearning/master/res50_v212/res50_v212.py)
 
-### The result of training loss and evaluating accuracy.{#res50_training_result}
+### The result of training loss and evaluating accuracy. {#res50_training_result}
 
 #### res50_v211
 
@@ -48,11 +48,11 @@ The learning rate is first set to be 0.001 for the first 500 epochs for warm up,
 ![loss](https://raw.githubusercontent.com/YiqunChen1999/DeepLearning/master/res50_v211/res50_v211_loss.png)
 
 
-## The Batch Normalization.{#batchnorm}
+## The Batch Normalization. {#batchnorm}
 
 You can view the result by [clicking the link](https://www.overleaf.com/read/kgyxrfttszbp).
 
-## Papers reading{#papers_reading}
+## Papers reading. {#papers_reading}
 
 I have read the following papers:
 
