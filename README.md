@@ -43,9 +43,9 @@ The learning rate is first set to be 0.001 for the first 500 epochs for warm up,
 
 #### res50_v212
 
-![accuracy](https://raw.githubusercontent.com/YiqunChen1999/DeepLearning/master/res50_v211/res50_v211_acc.png)
+![accuracy](https://raw.githubusercontent.com/YiqunChen1999/DeepLearning/master/res50_v212/res50_v212_acc.png)
 
-![loss](https://raw.githubusercontent.com/YiqunChen1999/DeepLearning/master/res50_v211/res50_v211_loss.png)
+![loss](https://raw.githubusercontent.com/YiqunChen1999/DeepLearning/master/res50_v212/res50_v212_loss.png)
 
 
 ## The Batch Normalization. {#batchnorm}
