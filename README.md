@@ -4,40 +4,55 @@ This page is the the deep learning experience of Yiqun Chen, and the page is rem
 
 # Content
 
-1. [ResNet, BatchNorm and papers reading.](#resnet_batchnorm_and_papers_reading)
+1. [ResNet, BatchNorm and papers reading.](#resnet-batchnorm-papers_reading)
 
   1. [ResNet with experiments.](#resnet_with_experiments)
   
-  - [Training strategy.](#the_training_strategy)
+  - [Training strategy.](#training_strategy)
   
   - [The result of training loss and evaluating accuracy.](#the_result_of_training_loss_and_evaluating_accuracy)
   
-  2. [The Batch Normalization.](#the_batch_normalization)
+  2. [The Batch Normalization.](#batch_norma)
 
   3. [The papers reading.](#papers_reading)
 
 
-# ResNet, BatchNorm and papers reading.
+# ResNet, BatchNorm and papers reading. {#resnet-batchnorm-papers_reading}
 
-## ResNet with experiments.
+## ResNet with experiments. {#resnet_with_experiments}
 
-The best testing accuracy have reached 93.91% at epoch 1339. The more detailed introduction will be available soon.
+The best testing accuracy have reached 93.91% of res50 version 211 and 93.99% of res50 version 212. The more detailed introduction will be available soon.
 
-### The training strategy.
+### The training strategy. {#training_strategy}
+
+#### res50_v211
 
 The learning rate is set to be 0.001 for the first 250 epochs for warm up, and then 0.01 for next 250 epochs, when it get 500 epochs and 750 epochs, I set the learning rate to 0.001 and 0.0001. The code is now [available](https://raw.githubusercontent.com/YiqunChen1999/DeepLearning/master/res50_v211/res50_v211.py)
 
-### The result of training loss and evaluating accuracy.
+#### res50_v212
 
-![loss](https://raw.githubusercontent.com/YiqunChen1999/DeepLearning/master/res50_v211/res50_v211_acc.png)
+The learning rate is first set to be 0.001 for the first 500 epochs for warm up, when it reach epoch 500, 900, 1200, the learning rate is set to be 0.01, 0.001, 0.0001 respectively. The code is now [available](https://raw.githubusercontent.com/YiqunChen1999/DeepLearning/master/res50_v212/res50_v212.py)
+
+### The result of training loss and evaluating accuracy.{#res50_training_result}
+
+#### res50_v211
+
+![accuracy](https://raw.githubusercontent.com/YiqunChen1999/DeepLearning/master/res50_v211/res50_v211_acc.png)
 
 ![loss](https://raw.githubusercontent.com/YiqunChen1999/DeepLearning/master/res50_v211/res50_v211_loss.png)
 
-## The Batch Normalization.
+#### res50_v212
+
+![accuracy](https://raw.githubusercontent.com/YiqunChen1999/DeepLearning/master/res50_v211/res50_v211_acc.png)
+
+![loss](https://raw.githubusercontent.com/YiqunChen1999/DeepLearning/master/res50_v211/res50_v211_loss.png)
+
+
+## The Batch Normalization.{#batchnorm}
 
 You can view the result by [clicking the link](https://www.overleaf.com/read/kgyxrfttszbp).
 
-## Papers reading
+## Papers reading{#papers_reading}
 
 I have read the following papers:
 
