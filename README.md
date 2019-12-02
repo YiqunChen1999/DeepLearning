@@ -6,15 +6,11 @@ This page is the the deep learning experience of Yiqun Chen, and the page is rem
 
 1. [ResNet, BatchNorm and papers reading.](#resnet-batchnorm-papers_reading)
 
-  1. [ResNet with experiments.](#resnet_with_experiments)
+  1.1. [ResNet with experiments.](#resnet_with_experiments)
   
-  - [Training strategy.](#training_strategy)
-  
-  - [The result of training loss and evaluating accuracy.](#res50_training_result)
-  
-  2. [The Batch Normalization.](#batchnorm)
+  1.2. [The Batch Normalization.](#batchnorm)
 
-  3. [The papers reading.](#papers_reading)
+  1.3. [The papers reading.](#papers_reading)
   
 2. [Other Resource](#other_resource)
 
@@ -62,10 +58,6 @@ I have read the following papers:
 
 - [Joint Discriminative and Generative Learning for Person Re-identification.](http://openaccess.thecvf.com/content_CVPR_2019/papers/Zheng_Joint_Discriminative_and_Generative_Learning_for_Person_Re-Identification_CVPR_2019_paper.pdf)
 
-And the paper below is what I am reading:
-
-- [TensorMask: A Foundation for Dense Object Segmentation.](https://arxiv.org/pdf/1903.12174.pdf)
-
 
 # Other Resource
 
@@ -76,3 +68,5 @@ And the paper below is what I am reading:
 [Awesome Graph Classification](https://github.com/benedekrozemberczki/awesome-graph-classification)
 
 [Awesome Object Detection](https://github.com/amusi/awesome-object-detection)
+
+[Pumpkin Book](https://github.com/datawhalechina/pumpkin-book)
