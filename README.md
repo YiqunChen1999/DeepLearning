@@ -15,6 +15,8 @@ This page is the the deep learning experience of Yiqun Chen, and the page is rem
   2. [The Batch Normalization.](#batchnorm)
 
   3. [The papers reading.](#papers_reading)
+  
+2. [Other Resource](#other_resource)
 
 
 # ResNet, BatchNorm and papers reading. {#resnet-batchnorm-papers_reading}
@@ -63,3 +65,14 @@ I have read the following papers:
 And the paper below is what I am reading:
 
 - [TensorMask: A Foundation for Dense Object Segmentation.](https://arxiv.org/pdf/1903.12174.pdf)
+
+
+# Other Resource
+
+[Deep Learning for Tracking and Detection](https://github.com/abhineet123/Deep-Learning-for-Tracking-and-Detection)
+
+[Deep Learning for Object Detection](https://github.com/hoya012/deep_learning_object_detection)
+
+[Awesome Graph Classification](https://github.com/benedekrozemberczki/awesome-graph-classification)
+
+[Awesome Object Detection](https://github.com/amusi/awesome-object-detection)
