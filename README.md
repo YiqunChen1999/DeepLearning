@@ -6,11 +6,11 @@ This page is the the deep learning experience of Yiqun Chen, and the page is rem
 
 1. [ResNet, BatchNorm and papers reading.](#resnet-batchnorm-papers_reading)
 
-  1.1. [ResNet with experiments.](#resnet_with_experiments)
+    1.1. [ResNet with experiments.](#resnet_with_experiments)
   
-  1.2. [The Batch Normalization.](#batchnorm)
+    1.2. [The Batch Normalization.](#batchnorm)
 
-  1.3. [The papers reading.](#papers_reading)
+    1.3. [The papers reading.](#papers_reading)
   
 2. [Other Resource](#other_resource)
 
