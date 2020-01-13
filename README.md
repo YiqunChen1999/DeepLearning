@@ -19,9 +19,9 @@ This page is the the deep learning experience of Yiqun Chen, and the page is rem
 
 # Competitions you may be interested in.
 
-Name | Organizer | Level | Brief Introduction | Link
+Name | Organizer | Level | Link
 --------------------------------------------
-中国人工智能大赛·语言与知识技术竞赛(CAIC) | 厦门市 | 国家级 | 机器阅读理解(Machine Reading Comprehension)是指让机器阅读文本，然后回答和阅读内容相关的问题。本次竞赛设立了面向观点型问题的机器阅读理解任务，竞赛基于测试集人工标注的观点答案，采用答案分类的准确率（Accuracy）作为评价指标，参赛团队在规定时间内须使用深度学习平台飞桨进行模型的设计。 | [网址]（https://ai.ixm.gov.cn/2020/index.html）
+中国人工智能大赛·语言与知识技术竞赛(CAIC) | 厦门市 | 国家级 | [网址]（https://ai.ixm.gov.cn/2020/index.html）
 
 # ResNet, BatchNorm and papers reading. {#resnet-batchnorm-papers_reading}
 
