@@ -19,9 +19,10 @@ This page is the the deep learning experience of Yiqun Chen, and the page is rem
 
 # Competitions you may be interested in.
 
-| Name | Field | Organizer | Level | Link |
-|------|-------|-----------|-------|------|
-| 中国人工智能大赛·语言与知识技术竞赛(CAIC) | NLP | 厦门市 | 国家级 | [CAIC](https://ai.ixm.gov.cn/2020/index.html)| 
+| Name | Field | Level | Link |
+|------|-------|-------|------|
+| 中国人工智能大赛·语言与知识技术竞赛(CAIC) | NLP | 国家级 | [CAIC](https://ai.ixm.gov.cn/2020/index.html)| 
+|COCO 2019 Detection, Keypoint, Panoptic, and DensePose Challenges | CV | 国际级 | [COCO](http://cocodataset.org/)
 
 # ResNet, BatchNorm and papers reading. {#resnet-batchnorm-papers_reading}
 
