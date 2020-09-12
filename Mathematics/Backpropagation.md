@@ -1,5 +1,4 @@
 
-
 # Backpropagation and Chain Rule
 
 |[Home](https://yiqunchen1999.github.io/DeepLearning)|[Jacobian](#Jacobian)|[Backpropagation](#Backpropagation)|
