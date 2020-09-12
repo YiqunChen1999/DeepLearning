@@ -1,7 +1,6 @@
 # Notes About Deep Learning
 
 |[Mathematics](#Mathematics)|[DeepLearning](#DeepLearning)|[Papers](#Papers)|[Resources](#Resources)|[About](#About)|
-|---------------------------|-----------------------------|-----------------|-----------------------|---------------|
 
 ## Mathematics
 
