@@ -2,3 +2,5 @@ title: Deep Learning Notes
 theme: jekyll-theme-cayman
 auto: true
 markdown: kramdown
+kramdown:
+  html_to_native: true
