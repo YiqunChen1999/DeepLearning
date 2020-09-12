@@ -4,6 +4,8 @@
 
 ## Mathematics
 
+[Backpropagation](./Mathematics/Backpropagation.md)
+
 ## DeepLearning
 
 ## Papers
