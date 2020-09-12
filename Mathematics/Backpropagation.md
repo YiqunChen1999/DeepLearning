@@ -16,7 +16,7 @@
 
 现有映射：$f: R^N \rightarrow R^M$，即，接受一个向量 $x \in R^N$ 作为函数 $y = f(x)$ 的输入，返回一个向量 $y \in R^M$作为输出，这可以视作有M个函数，任意一个函数$y_i$接受N个输入，并返回一个标量作为输出。输出y对输入x的偏导数为雅可比矩阵(Jacobian)，
 
-$$ \frac{\partial{y}}{\partial{x}} = \left[ \begin{matrix} \frac{\partial{y_1}}{\partial{x_1}} & \frac{\partial{y_1}}{\partial{x_2}} & \cdots & \frac{\partial{y_1}}{\partial{x_N}} \\ \frac{\partial{y_2}}{\partial{x_1}} & \frac{\partial{y_2}}{\partial{x_2}} & \cdots & \frac{\partial{y_2}}{\partial{x_N}} \\ \vdots & \vdots & \ddots & \vdots \\ \frac{\partial{y_M}}{\partial{x_1}} & \frac{\partial{y_M}}{\partial{x_2}} & \cdots & \frac{\partial{y_M}}{\partial{x_N}} \\  \end{matrix} \right] $$，
+$\frac{\partial{y}}{\partial{x}} = \left[ \begin{matrix} \frac{\partial{y_1}}{\partial{x_1}} & \frac{\partial{y_1}}{\partial{x_2}} & \cdots & \frac{\partial{y_1}}{\partial{x_N}} \\ \frac{\partial{y_2}}{\partial{x_1}} & \frac{\partial{y_2}}{\partial{x_2}} & \cdots & \frac{\partial{y_2}}{\partial{x_N}} \\ \vdots & \vdots & \ddots & \vdots \\ \frac{\partial{y_M}}{\partial{x_1}} & \frac{\partial{y_M}}{\partial{x_2}} & \cdots & \frac{\partial{y_M}}{\partial{x_N}} \\  \end{matrix} \right]$
 
 其第i行第j列元素表示第i个函数$y_i$对第j个输入$x_j$的偏导数，那么，若$x \rightarrow x + \Delta x$，则 $y \rightarrow y + \frac{\partial{y}}{\partial{x}} \cdot \Delta x$ 其中$\cdot$代表矩阵与向量之间的内积运算。矩阵有M行代表有M个函数，而N列则代表有N个输入，即，雅可比矩阵为一个$M \times N$的矩阵，恰好在点乘运算时的写法与通常的写法一致，即$\frac{\partial{y}}{\partial{x}} \cdot \Delta x$。
 
