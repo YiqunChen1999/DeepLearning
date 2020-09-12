@@ -11,7 +11,7 @@
 # Backpropagation and Chain Rule
 
 |[Home](https://yiqunchen1999.github.io/DeepLearning)|[Jacobian](#Jacobian)|[Backpropagation](#Backpropagation)|
-
+@import "Backpropagation.pdf"
 ## Jacobian
 
 现有映射：$f: R^N \rightarrow R^M$，即，接受一个向量 $x \in R^N$ 作为函数 $y = f(x)$ 的输入，返回一个向量 $y \in R^M$作为输出，这可以视作有M个函数，任意一个函数$y_i$接受N个输入，并返回一个标量作为输出。输出y对输入x的偏导数为雅可比矩阵(Jacobian)，
