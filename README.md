@@ -3,9 +3,15 @@
 |Mathematics|DeepLearning|Papers|Resources|About|
 |-----------|------------|------|---------|-----|
 
+## Mathematics
 
+## DeepLearning
 
-# Other Resource
+## Papers
+
+## Resources
+
+Some resources may be helpful.
 
 [Deep Learning for Tracking and Detection](https://github.com/abhineet123/Deep-Learning-for-Tracking-and-Detection)
 
@@ -16,3 +22,8 @@
 [Awesome Object Detection](https://github.com/amusi/awesome-object-detection)
 
 [Pumpkin Book](https://github.com/datawhalechina/pumpkin-book)
+
+## About
+
+<yiqunchen1999@mail.sdu.edu.cn>
+
