@@ -6,7 +6,7 @@
 
 [Backpropagation](./Mathematics/Backpropagation.pdf)
 
-[Activation](./DeepLearning/Activation/Activation.pdf)
+[Activation](./DeepLearning/Activation/Activation.md)
 
 [DataProcessing](./DeepLearning/DataProcessing/DataProcessing.pdf)
 
