@@ -6,6 +6,12 @@
 
 [Backpropagation](./Mathematics/Backpropagation.pdf)
 
+[Activation](./DeepLearning/Activation.pdf)
+
+[DataProcessing](./DeepLearning/DataProcessing.pdf)
+
+[WeightInitialization](./DeepLearning/WeightInitialization.pdf)
+
 ## DeepLearning
 
 ## Papers
