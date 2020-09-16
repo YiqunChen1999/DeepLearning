@@ -4,7 +4,7 @@
 
 ## Mathematics
 
-[Backpropagation](./Mathematics/Backpropagation.md)
+[Backpropagation](./Mathematics/Backpropagation.pdf)
 
 ## DeepLearning
 
