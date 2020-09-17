@@ -14,6 +14,8 @@
 
 [WeightInitialization](./DeepLearning/WeightInitialization/WeightInitialization.pdf)
 
+[Interpretability](./DeepLearning/Interpretability/Interpretability.pdf)
+
 ## Papers
 
 ## Resources
