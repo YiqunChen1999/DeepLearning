@@ -12,9 +12,11 @@
 
 [DataProcessing](./DeepLearning/DataProcessing/DataProcessing.pdf)
 
-[WeightInitialization](./DeepLearning/WeightInitialization/WeightInitialization.pdf)
-
 [Interpretability](./DeepLearning/Interpretability/Interpretability.pdf)
+
+[Optimization](./DeepLearning/Optimization/Optimization.pdf)
+
+[WeightInitialization](./DeepLearning/WeightInitialization/WeightInitialization.pdf)
 
 ## Papers
 
